@@ -7,7 +7,7 @@
     <Company>Magenic</Company>
     <Description>UpdateVersion Tool</Description>
     <FileVersion>1.0.1.5</FileVersion>
-    <StartupObject>UpdateVersionTool.Program</StartupObject>
+    <StartupObject>update_semver.Program</StartupObject>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

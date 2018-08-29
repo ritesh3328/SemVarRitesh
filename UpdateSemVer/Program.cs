@@ -4,7 +4,7 @@ using System.IO;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
-namespace UpdateVersionTool
+namespace update_semver
 {
     class Program
     {

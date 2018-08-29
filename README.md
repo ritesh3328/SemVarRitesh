@@ -14,7 +14,12 @@ Here are typical attributes, you can add additional elements:
     <Copyright>Copyright (c) 2018</Copyright>
     <Company>Magenic</Company>
     <Description>Assembly Info Demo</Description>
-    <!-- these are the version elements -->
+    <!-- 
+        this is the version element 
+        major.minor.release.build
+        matching semver of 
+        major.minor.patch[.not-used]
+    -->
     <FileVersion>1.2.3.4</FileVersion>
   </PropertyGroup>
 
@@ -85,8 +90,8 @@ This tool increments the sematic version build number by 1 for the `FileVersion`
 2. Publish to get a platform specific binary using the scripts:
 
 ```bash
-UpdateVersionTool/publish-linux.sh
-UpdateVersionTool/publish-windows.sh
+UpdateSemVer/publish-linux.sh
+UpdateSemVer/publish-windows.sh
 ```
 3. Copy outputs to where you want to use the tool
 
@@ -95,7 +100,7 @@ UpdateVersionTool/publish-windows.sh
 Assuming your project is called `my_project.csproj` and the two attributes are both set to `1.2.3.4`
 
 ```bash 
-UpdateVersionTool my_project.csproj
+update_semver "my_project.csproj"
 ```
 
 this yields the message below to STDOUT:
